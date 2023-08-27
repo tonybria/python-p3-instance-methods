@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 
 class Dog:
-    # Class body goes here
+    def bark(self):
+        print("Woof!")
 
-    #Instance method definition
-    pass
+def test_is_method():
+    '''is an instance method'''
+    fido = Dog()
+    assert type(fido.bark) == types.MethodType
+
+import types
+
+
